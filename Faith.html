@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith Princess S. Loreto | Graphic Designer & Executive Assistant Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the Inter font and smooth transitions */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Soft off-white background */
+            scroll-behavior: smooth;
+        }
+        .card-shadow {
+            /* Updated shadow for a lifted, aesthetic look */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-shadow:hover {
+            /* Lift effect on hover */
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        /* Custom gradient text for the name: Indigo to Purple */
+        .gradient-text {
+            background-image: linear-gradient(to right, #4c51bf, #7c3aed); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Aesthetic link underline effect */
+        .aesthetic-link {
+            position: relative;
+            display: inline-block;
+        }
+        .aesthetic-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: -3px;
+            left: 0;
+            background-color: #7c3aed; /* Purple color */
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        .aesthetic-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800 bg-slate-50">
+
+    <div class="max-w-7xl mx-auto p-4 sm:p-8">
+
+        <!-- Header / Hero Section - Graphic Designer & Executive Assistant -->
+        <header class="text-center py-16 sm:py-28 bg-white rounded-3xl mb-16 card-shadow">
+            <h1 class="text-5xl sm:text-7xl font-extrabold tracking-tight text-gray-900 mb-4">
+                Hello, I'm <span class="gradient-text">Faith Princess S. Loreto</span> ✨
+            </h1>
+            <h2 class="text-xl sm:text-3xl font-light text-gray-500">
+                A highly organized **Executive Assistant** & <span class="font-medium text-indigo-600">Skilled Graphic Designer</span>
+            </h2>
+            <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                I deliver meticulous executive support and high-impact visual communication, ensuring professional operations and powerful brand presence.
+            </p>
+            <div class="mt-8">
+                <a href="#projects" class="inline-block px-8 py-3 text-lg font-semibold text-white bg-purple-600 rounded-full hover:bg-purple-700 transition duration-300 shadow-lg hover:shadow-xl">
+                    Explore My Skills & Tools
+                </a>
+            </div>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="grid lg:grid-cols-3 gap-10">
+            
+            <!-- About Me Section -->
+            <section id="about" class="lg:col-span-1 bg-white p-8 rounded-2xl h-fit sticky top-8 card-shadow">
+                <h3 class="text-3xl font-extrabold mb-5 text-gray-900 border-b pb-3 border-purple-200">
+                    <span class="text-purple-600">🌟</span> My Core Skills to Offer
+                </h3>
+                <div class="space-y-4 text-lg text-gray-700">
+                    <p class="font-bold text-indigo-800">Executive Assistance:</p>
+                    <p>I excel in **strategic scheduling, complex logistical coordination, professional communication, and developing efficient organizational systems** for high-level management.</p>
+
+                    <p class="font-bold text-indigo-800">Graphic Design:</p>
+                    <p>I specialize in **brand identity creation, digital and print layout design, impactful data visualization, and mastering the Adobe Creative Suite** to produce polished assets.</p>
+
+                    <p>My dual skill set ensures that projects are not only executed efficiently but also presented flawlessly.</p>
+                    <p class="italic text-sm pt-4 text-gray-500">My focus is on efficiency, discretion, and driving visual and operational excellence.</p>
+                </div>
+            </section>
+
+            <!-- Featured Creative & Strategic Engagements -->
+            <section id="projects" class="lg:col-span-2 space-y-10">
+                <h3 class="text-4xl font-extrabold mb-6 text-gray-900">
+                    <span class="text-indigo-600">🎨/💼</span> Featured Engagements: Skills in Action
+                </h3>
+
+                <!-- Project Card 1: Branding & Visuals (Graphic Designer Focus) -->
+                <article class="bg-white p-8 rounded-2xl border border-gray-100 hover:border-purple-400 card-shadow">
+                    <h4 class="text-3xl font-bold text-indigo-800 mb-3">1. Brand Identity & Marketing Collateral Design</h4>
+                    <div class="space-y-3">
+                        <p class="text-base font-medium text-gray-500">
+                            <span class="font-bold text-gray-700">Role:</span> Lead Graphic Designer, Brand Creator
+                        </p>
+                        <p class="text-base font-medium text-gray-500">
+                            <span class="font-bold text-gray-700">Applications Used:</span> Adobe Illustrator, Adobe Photoshop, Figma, Canva
+                        </p>
+                        <p class="text-gray-700 mt-4">Developed a full brand identity package, including logo, color palette, and typography, for a startup. Created marketing materials (brochures, social media graphics) that increased engagement by **30%** in the first quarter post-launch, ensuring a cohesive professional aesthetic.</p>
+                        <a href="#" class="inline-block mt-4 text-purple-600 font-semibold aesthetic-link">
+                            View Design Portfolio (Mockup) &rarr;
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project Card 2: Executive Office Management (EA Focus) -->
+                <article class="bg-white p-8 rounded-2xl border border-gray-100 hover:border-purple-400 card-shadow">
+                    <h4 class="text-3xl font-bold text-indigo-800 mb-3">2. Executive Office Workflow Efficiency & Reporting</h4>
+                    <div class="space-y-3">
+                        <p class="text-base font-medium text-gray-500">
+                            <span class="font-bold text-gray-700">Role:</span> Executive Assistant, Operations Lead
+                        </p>
+                        <p class="text-base font-medium text-gray-500">
+                            <span class="font-bold text-gray-700">Applications Used:</span> Microsoft Excel/Sheets, Outlook/Google Calendar, Asana/Trello, Expensify
+                        </p>
+                        <p class="text-gray-700 mt-4">Managed and streamlined complex executive scheduling, travel logistics, and quarterly financial reporting. Utilized advanced features in Excel for budgeting and created automated email templates in Outlook, cutting down administrative response time by **45%.**</p>
+                        <a href="#" class="inline-block mt-4 text-purple-600 font-semibold aesthetic-link">
+                            Review Process Documentation &rarr;
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project Card 3: Presentation & Document Design (Combined Focus) -->
+                <article class="bg-white p-8 rounded-2xl border border-gray-100 hover:border-purple-400 card-shadow">
+                    <h4 class="text-3xl font-bold text-indigo-800 mb-3">3. High-Level Stakeholder Presentation Design</h4>
+                    <div class="space-y-3">
+                        <p class="text-base font-medium text-gray-500">
+                            <span class="font-bold text-gray-700">Role:</span> Presentation Designer & Content Formatter
+                        </p>
+                        <p class="text-base font-medium text-gray-500">
+                            <span class="font-bold text-gray-700">Applications Used:</span> Adobe InDesign, PowerPoint/Keynote, Microsoft Word
+                        </p>
+                        <p class="text-gray-700 mt-4">Designed and formatted crucial reports and presentations for board meetings, ensuring strict adherence to visual guidelines and accessibility standards. Transformed dense textual data into engaging infographics, improving document clarity and internal stakeholder review time.</p>
+                        <a href="https://www.google.com/search?q=https://faith-princess-loreto.dev/presentations" class="inline-block mt-4 text-purple-600 font-semibold aesthetic-link">
+                            View Document Samples &rarr;
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Executive Toolkit Prompt (Useful Tool Prompt) -->
+                <section id="toolkit" class="bg-indigo-50 p-8 rounded-2xl border border-indigo-200 card-shadow">
+                    <h3 class="text-3xl font-extrabold mb-5 text-indigo-800">
+                        <span class="text-indigo-600">🛠️</span> Executive & Design Toolkit Prompt
+                    </h3>
+                    <p class="text-lg text-gray-700 mb-4">
+                        My expertise lies in delivering both high-quality visual outputs and efficient logistical support. This is a common, dual-purpose request:
+                    </p>
+                    <div class="bg-white p-6 rounded-xl border-l-4 border-purple-500 shadow-md">
+                        <p class="font-mono text-sm text-gray-600 mb-2">
+                            PROMPT:
+                        </p>
+                        <blockquote class="text-xl font-semibold text-gray-900 italic">
+                            "The team needs a finalized marketing flyer by tomorrow, but the executive's calendar needs a complex set of conflicting meetings resolved first. Prioritize, then design."
+                        </blockquote>
+                        <p class="mt-4 text-sm text-gray-600">
+                            <span class="font-bold text-indigo-600">Output:</span> Calendar optimized (utilizing Google Calendar rules) and the print-ready flyer designed (using Adobe InDesign) within the deadline.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Accomplishment Albums (Detailed Skills Breakdown) -->
+                <section id="albums" class="bg-white p-8 rounded-2xl border border-gray-100 card-shadow">
+                    <h3 class="text-3xl font-extrabold mb-5 text-gray-900 border-b pb-3 border-purple-200">
+                        <span class="text-purple-600">🏆</span> Key Accomplishment Albums
+                    </h3>
+                    <div class="grid sm:grid-cols-3 gap-6 text-lg">
+                        
+                        <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <h4 class="font-bold text-indigo-700 mb-2">Graphic Design Applications</h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 text-base">
+                                <li>**Adobe Photoshop:** Expert photo retouching and manipulation.</li>
+                                <li>**Adobe Illustrator:** Vector illustration and logo design mastery.</li>
+                                <li>**Figma/Canva:** Rapid prototyping and social media template creation.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <h4 class="font-bold text-indigo-700 mb-2">Executive Assistant Tools</h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 text-base">
+                                <li>**G Suite/Microsoft 365:** Full proficiency in advanced functions.</li>
+                                <li>**Project Management:** Managed team tasks using Asana/Trello.</li>
+                                <li>**Finance/Admin:** Expense reporting via Expensify and invoice tracking.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <h4 class="font-bold text-indigo-700 mb-2">Operational Achievements</h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 text-base">
+                                <li>Successfully planned and executed 3 executive offsites.</li>
+                                <li>Reduced executive administrative workload by automating expense flow.</li>
+                                <li>Created 5 reusable presentation templates for department heads.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+        </main>
+
+        <!-- Footer / Contact Section -->
+        <footer class="mt-20 pt-10 pb-4 border-t-2 border-indigo-200 text-center">
+            <h3 class="text-3xl font-extrabold mb-5 text-gray-900">
+                <span class="text-purple-600">🔗</span> Let's Connect
+            </h3>
+            <div class="flex flex-wrap justify-center gap-6 sm:gap-12 text-lg font-medium">
+                <a href="https://www.google.com/search?q=https://www.linkedin.com/in/faithprincessloreto" target="_blank" class="text-gray-700 hover:text-purple-600 transition duration-150 aesthetic-link">LinkedIn (EA)</a>
+                <a href="https://www.google.com/search?q=https://dribbble.com/faithprincessloreto" target="_blank" class="text-gray-700 hover:text-purple-600 transition duration-150 aesthetic-link">Dribbble (Design)</a>
+                <a href="https://www.google.com/search?q=https://faithprincessloreto.dev/work" target="_blank" class="text-gray-700 hover:text-purple-600 transition duration-150 aesthetic-link">Portfolio Site</a>
+                <a href="mailto:faith.princess.loreto@email.com" class="text-gray-700 hover:text-purple-600 transition duration-150 aesthetic-link">faith.princess.loreto@email.com</a>
+            </div>
+            <p class="text-sm text-gray-500 mt-8">&copy; 2025 Faith Princess S. Loreto. Precision in administration, excellence in design.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
